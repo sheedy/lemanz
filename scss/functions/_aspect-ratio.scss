@@ -1,0 +1,25 @@
+// ============================================================
+// $Aspect Ratio
+// ============================================================
+
+// Pixels are used by default if no $unit argument is passed.
+// Examples use a 16:9 aspect ratio (i.e. 9/16)
+
+// Pixel
+// height: aspect(500, 9/16);
+
+// Percent
+// height: aspect(500, 9/16, '%');
+
+// Ems
+// height: aspect(500, 9/16, '');
+
+@function aspect($width, $ratio, $unit:px) {
+    @if ($unit == px) {
+        @return ($width * ($ratio) + px);
+    }@elseif ($unit == '%') {
+        @return ($width * ($ratio) * 1.00%);
+    }@else {
+        @return ($width * ($ratio) * 1em);
+    }
+}

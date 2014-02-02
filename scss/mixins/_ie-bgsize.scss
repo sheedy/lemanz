@@ -1,0 +1,10 @@
+// ============================================================
+// $Background-Size Fallback
+// Polyfill for lte IE8
+// ============================================================
+
+@mixin iebgsize($path, $sizing) {
+	.lt-ie9 & {
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$path}',sizingMethod='#{$sizing}');
+	}
+}

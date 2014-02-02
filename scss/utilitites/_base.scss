@@ -1,0 +1,29 @@
+// ============================================================
+// $Custom Base Styles
+// ============================================================
+
+* {
+    @include box-sizing(border-box);
+}
+
+img,
+object {
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    // Compass Helper Function
+    // link-colors($normal, $hover, $active, $visited, $focus)
+    @include link-colors($normal, $hover, $active, $visited, $focus);
+
+    &:hover {
+        @include link-colors($normal, $hover, $active, $visited, $focus);
+    }
+}

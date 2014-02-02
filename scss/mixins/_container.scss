@@ -1,0 +1,10 @@
+// ============================================================
+// $Container
+// ============================================================
+
+@mixin container($container-max-width, $gutter) {
+    max-width: $contain-mw;
+    margin: auto;
+    padding: 0 $gutter;
+    width: 100%;
+}

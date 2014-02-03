@@ -626,100 +626,6 @@ table {
   border-spacing: 0;
 }
 
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-a {
-  text-decoration: none;
-  color: blue;
-}
-a:visited {
-  color: blue;
-}
-a:hover {
-  color: cyan;
-  text-decoration: underline;
-}
-
-::-moz-selection {
-  background: #A60156;
-  color: white;
-  text-shadow: none;
-}
-
-::selection {
-  background: #A60156;
-  text-shadow: none;
-  color: white;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-audio,
-canvas,
-img,
-video {
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-img,
-object {
-  max-width: 100%;
-  height: auto;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: blue;
-}
-a:visited {
-  color: blue;
-}
-a:focus {
-  color: blue;
-}
-a:hover {
-  color: cyan;
-}
-a:active {
-  color: cyan;
-}
-
 /*!
  *
 .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
@@ -1068,6 +974,100 @@ p + .drop-cap {
  * Extend this object into your markup.
  *
  */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  color: cyan;
+  text-decoration: underline;
+}
+
+::-moz-selection {
+  background: #A60156;
+  color: white;
+  text-shadow: none;
+}
+
+::selection {
+  background: #A60156;
+  text-shadow: none;
+  color: white;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+a:focus {
+  color: blue;
+}
+a:hover {
+  color: cyan;
+}
+a:active {
+  color: cyan;
+}
+
 /*------------------------------------*\
     $CSSWIZARDRY-GRIDS
 \*------------------------------------*/

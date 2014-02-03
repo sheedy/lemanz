@@ -25,6 +25,7 @@ A starting point for all my personal/work-related Sass projects. Feel free to pu
 bower install
 ```
 - normalize.scss
+- typeplate.scss
 
 #### <img src="http://gruntjs.com/img/grunt-logo.png" width="50" height="auto" alt="Grunt">
 

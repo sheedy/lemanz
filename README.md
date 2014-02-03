@@ -14,8 +14,14 @@ A starting point for all my personal/work-related Sass projects. Feel free to pu
 
 **Installation**
 
-Install bower package dependencies
+1. Install Bower Package Dependencies
 
 ```bash
 bower install
+```
+
+2. Install Grunt Package Dependencies
+
+```bash
+npm install
 ```

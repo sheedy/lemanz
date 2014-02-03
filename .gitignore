@@ -1,1 +1,17 @@
+# OS X
+.DS_Store
+
+#Sass
 .sass-cache
+
+#NPM Directory
+node_modules
+
+#Build Directory
+dist
+
+#Bower Directory
+bower_components
+
+#Build Files
+js/minified

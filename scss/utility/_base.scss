@@ -2,7 +2,9 @@
 // $Custom Base Styles
 // ============================================================
 
-* {
+*,
+*:before,
+*:after {
     @include box-sizing(border-box);
 }
 
@@ -21,9 +23,5 @@ body {
 a {
     // Compass Helper Function
     // link-colors($normal, $hover, $active, $visited, $focus)
-    @include link-colors($normal, $hover, $active, $visited, $focus);
-
-    &:hover {
-        @include link-colors($normal, $hover, $active, $visited, $focus);
-    }
+    @include link-colors($global-anchor-color, $global-anchor-color-hover, $global-anchor-color-hover, $global-anchor-color, $global-anchor-color);
 }

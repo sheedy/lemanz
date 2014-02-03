@@ -1,33 +1,30 @@
 // ==========================================================================
 //    Base styles: opinionated defaults
 // ==========================================================================
-// * HTML5 Boilerplate
-// *
-// * What follows is the result of much research on cross-browser styling.
-// * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-// * Kroc Camen, and the H5BP dev community and team.
+// HTML5 Boilerplate
+//
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, and the H5BP dev community and team.
 
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
+	color: #222;
 }
 
 
 a {
-    text-decoration: none;
-    color: $global-anchor-color;
+	// Compass Helper Function
+	// link-colors($normal, $hover, $active, $visited, $focus)
+	@include link-colors($global-anchor-color, $global-anchor-color-hover, $global-anchor-color-hover, $global-anchor-color, $global-anchor-color);
+	text-decoration: none;
 
-    &:visited {
-        color: $global-anchor-color;
-    }
-
-    &:hover {
-        color: $global-anchor-color-hover;
-        text-decoration: underline;
-    }
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 
@@ -36,27 +33,27 @@ a {
 // * Customize the background color to match your design.
 
 ::-moz-selection {
-    background: #A60156;
-    color: white;
-    text-shadow: none;
+	background: #A60156;
+	color: white;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #A60156;
-    text-shadow: none;
-    color: white;
+	background: #A60156;
+	text-shadow: none;
+	color: white;
 }
 
 
 // * A better looking default horizontal rule
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 
@@ -67,21 +64,21 @@ audio,
 canvas,
 img,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 
 // * Remove default fieldset styles.
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 
 // * Allow only vertical resizing of textareas.
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }

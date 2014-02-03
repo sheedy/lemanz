@@ -983,14 +983,22 @@ textarea {
 }
 
 a {
-  text-decoration: none;
   color: blue;
+  text-decoration: none;
 }
 a:visited {
   color: blue;
 }
+a:focus {
+  color: blue;
+}
 a:hover {
   color: cyan;
+}
+a:active {
+  color: cyan;
+}
+a:hover {
   text-decoration: underline;
 }
 

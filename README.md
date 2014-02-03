@@ -11,7 +11,7 @@ A starting point for all my personal/work-related Sass projects. Feel free to pu
 - Bower 1.2.8 <img src="https://github-camo.global.ssl.fastly.net/8a2024183152023c85dc7124365c1afb721450a4/687474703a2f2f626f7765722e696f2f696d672f626f7765722d6c6f676f2e706e67" width="15" height="auto" alt="">
 - Ruby 2.0.0p247 <img src="https://www.ruby-lang.org/images/header-ruby-logo.png" width="15" height="auto" alt="">
 - Sass 3.2.12 (Media Mark) <img src="http://sass-lang.com/assets/img/logo-235e394c.png" width="20" height="auto" alt="syntactically awesome stylesheets">
-- Compass 0.12.2 (Alnilam)
+- Compass 0.12.2 (Alnilam) <img src="http://www.phase2technology.com/wp-content/uploads/2014/01/compass-logo-cropped-300x64.png" width="70" height="auto" alt="">
 - jQuery 1.10.2 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/220px-JQuery_logo.svg.png" width="40" height="auto" alt="javascript query">
 - Modernizr 2.6.2 <img src="http://modernizr.com/i/img/logo-x12.png" width="20" height="auto" alt="">
 

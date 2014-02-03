@@ -12,16 +12,20 @@ A starting point for all my personal/work-related Sass projects. Feel free to pu
 - Ruby 2.0.0p247
 - Node v0.10.24
 
-**Installation**
+### Installation
 
-1. Install Bower Package Dependencies
+**Install Bower Package Dependencies**
 
 ```bash
 bower install
 ```
 
-2. Install Grunt Package Dependencies
+**Install Grunt Package Dependencies**
 
 ```bash
 npm install
 ```
+
+**Notes**
+
+- Apache config follows the HTML5 Boilerplate, but adds the ability to serve ``.svgz`` along with supporting cache busting using the method ``main.123456.css``. Also strips ``.php`` files from their file extension.

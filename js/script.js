@@ -9,7 +9,7 @@
 // IIFE
 // keep things outside the global scope plz
 (function (window, document, undefined) {
-	'use strict';
+		'use strict';
 })(window, document);
 
 
@@ -22,27 +22,47 @@ function foo(){ /* code */ }
 var Base = Base || {};
 
 Base.functionName = function() {
-	var self = $(this),
-		variable = $('element');
+		var self = $(this),
+				variable = $('element');
 
-	function init() {
-		variable.click(functionOne);
-		functionTwo();
-	}
+		function init() {
+				variable.click(functionOne);
+				functionTwo();
+		}
 
-	function functionOne() { /*code*/ }
+		function functionOne() { /*code*/ }
 
-	function functionTwo() {
-		window.hide();
-	}
+		function functionTwo() {
+				window.hide();
+		}
 
-	init();
+		init();
 };
 
 // On Doc Ready
 $(function() {
-	new Base.functionName();
+		new Base.functionName();
 });
+
+
+// Disable Hover
+// ===========================================
+// http://www.thecssninja.com/javascript/pointer-events-60fps
+
+var body = document.body,
+	timer;
+
+window.addEventListener('scroll', function() {
+	clearTimeout(timer);
+
+	if(!body.classList.contains('disable-hover')) {
+		body.classList.add('disable-hover');
+	}
+
+	timer = setTimeout(function() {
+		body.classList.remove('disable-hover')
+	},500);
+}, false);
 
 
 // SVG Magic
@@ -52,7 +72,7 @@ $(function() {
 // to parse the div containing the backgroundimage 
 // including the backgroundimage option.
 $('.svg-bg').svgmagic({
-	backgroundimage: true
+		backgroundimage: true
 });
 
 // Implementation
@@ -65,10 +85,10 @@ $('img[src*=".svgz"]').svgmagic();
 // You can parse an options object into SVGMagic. 
 // Currently it supports the following options:
 $('img[src*=".svgz"]').svgmagic({
-	preloader: false, // url-to-preloader/false || Preloader before the image gets replaced, default: false
-	testmode: true, // SVGMagic works in every browser if set to true, default: false
-	secure: false, // Images are sent via https:// if set to true, default: false
-	backgroundimage: true, // Check given div for backgroundimages, default: false
-	callback: false, // Function to run after images are changed, default: false
-	dumpcache: true // Force to remove the cache and create a new .PNg, default: false
+		preloader: false, // url-to-preloader/false || Preloader before the image gets replaced, default: false
+		testmode: true, // SVGMagic works in every browser if set to true, default: false
+		secure: false, // Images are sent via https:// if set to true, default: false
+		backgroundimage: true, // Check given div for backgroundimages, default: false
+		callback: false, // Function to run after images are changed, default: false
+		dumpcache: true // Force to remove the cache and create a new .PNg, default: false
 });

@@ -1,6 +1,6 @@
 # Lemanz
 
-A starting point for all my personal/work-related Sass projects. Feel free to pull from anything you like in this repo or not. Addiotnally includes special JavaScript starting points/libraries like the jQuery plugin SVGMagic.
+A starting point for all my personal/work-related Sass projects. Feel free to pull from anything you like in this repo or not. Addiotnally includes special JavaScript starting points/libraries like the jQuery plugin SVGMagic and Hammer.JS.
 
 ### **Project Stack**
 

@@ -3,6 +3,7 @@
 // ============================================================
 
 // Centering Known
+// https://github.com/dustinhorton/mixture-boilerplate/blob/master/assets/css/src/_sass.scss#L134-L136
 @mixin centering-known($width, $height, $max-width) {
 	height: $height;
 	margin-top: (-$height/2);
@@ -16,6 +17,7 @@
 
 
 // Centering Table Display.
+// https://github.com/dustinhorton/mixture-boilerplate/blob/master/assets/css/src/_sass.scss#L138-L142
 // All children are displayed as table-cells
 // and vertically aligned in the middle.
 @mixin centering-table {

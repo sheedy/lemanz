@@ -2,24 +2,31 @@
 // $Custom Base Styles
 // ============================================================
 
-*,
-*:before,
-*:after {
-	@include box-sizing(border-box);
+// Box sizing FTW!
+* {
+	&:before,
+	&:after {
+		@include box-sizing(border-box);
+	}
 }
 
+// Fluid Images
 img,
-object {
+embed,
+object,
+video {
 	max-width: 100%;
 	height: auto;
 }
 
+// Global Margin & Padding
 html,
 body {
 	margin: 0;
 	padding: 0;
 }
 
+// Global Links
 a {
 	// Compass Helper Function
 	// link-colors($normal, $hover, $active, $visited, $focus)

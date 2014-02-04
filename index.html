@@ -65,6 +65,16 @@
 		<!-- Demo Styles -->
 
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script>
+			Modernizr.load([
+				{
+					// Polyfill for lte IE8 @media support.
+					// https://github.com/scottjehl/Respond
+					test: Modernizr.mq('only all'),
+					nope: 'js/libs/respond.js'
+				}
+			]);
+		</script>
 	</head>
 	<body>
 

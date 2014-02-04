@@ -15,19 +15,6 @@ textarea {
 	color: #222;
 }
 
-
-a {
-	// Compass Helper Function
-	// link-colors($normal, $hover, $active, $visited, $focus)
-	@include link-colors($global-anchor-color, $global-anchor-color-hover, $global-anchor-color-hover, $global-anchor-color, $global-anchor-color);
-	text-decoration: none;
-
-	&:hover {
-		text-decoration: underline;
-	}
-}
-
-
 // * Remove text-shadow in selection highlight: h5bp.com/i
 // * These selection rule sets have to be separate.
 // * Customize the background color to match your design.

@@ -1,8 +1,9 @@
 // ============================================================
-// $Background-Size Fallback
-// Polyfill for lte IE8
+// $Background-Size Polyfill for lte IE8
 // ============================================================
 
+// If this @mixin doesn't do the trick you can always try:
+// http://louisremi.github.io/background-size-polyfill
 @mixin iebgsize($path, $sizing) {
 	.lt-ie9 & {
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$path}',sizingMethod='#{$sizing}');

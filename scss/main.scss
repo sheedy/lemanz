@@ -23,8 +23,7 @@
 // 1. Aspect Ratio
 // 2. Context Calc
 
-@import "functions/aspect-ratio"; // 1
-@import "functions/context-calc"; // 2
+@import "functions/*";
 
 
 // ==========================================================================
@@ -34,8 +33,7 @@
 // 1. Psuedo Elements
 // 2. List Styling Variations
 
-@import "placeholders/psuedo-elements"; // 1
-@import "placeholders/list-styling"; // 2
+@import "placeholders/*";
 
 
 // ==========================================================================
@@ -59,22 +57,7 @@
 // 15. Striped Gradients
 // 16. Input Placeholders
 
-@import "mixins/media-queries"; // 1
-@import "mixins/centering"; // 2
-@import "mixins/caret"; // 3
-@import "mixins/rems"; // 4
-@import "mixins/ie-bgsize"; // 5
-@import "mixins/vendor-prefix"; // 6
-@import "mixins/keyframes"; // 7
-@import "mixins/container"; // 8
-@import "mixins/rgba"; // 9
-@import "mixins/image2x"; // 10
-@import "mixins/respond"; // 11
-@import "mixins/strip-units"; // 12
-@import "mixins/lists"; // 13
-@import "mixins/flexembed"; // 14
-@import "mixins/striped-gradients"; // 15
-@import "mixins/placeholder"; // 16
+@import "mixins/*";
 
 
 // ==========================================================================
@@ -133,7 +116,7 @@
 
 // 1. Home
 
-@import "templates/home"; // 1
+@import "templates/*"; // 1
 
 
 // ==========================================================================

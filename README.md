@@ -17,9 +17,23 @@ A starting point for all my personal/work-related Sass projects. Feel free to pu
 
 ### Installation
 
-#### <img src="https://github-camo.global.ssl.fastly.net/8a2024183152023c85dc7124365c1afb721450a4/687474703a2f2f626f7765722e696f2f696d672f626f7765722d6c6f676f2e706e67" width="50" height="auto" alt="Bower">
+**Install Dependencies**
 
-**Install Bower Package Dependencies**
+##### Bundler
+Use the ``bundle`` command to install the necessary gems like Compass which is used for this projects style sheets. (**Hint**: All the cool kids use [ruby version manager](https://rvm.io) to organize ``gemset`` dependencies):
+If you don't have [bundler](http://gembundler.com) installed you'll need to run ``gem install bundler`` before using ``bundle install``.
+
+```bash
+bundle install
+```
+- Compass Gem
+- Sass Gem
+- Sass Globbing Gem
+
+##### Bower
+
+#### <img src="https://github-camo.global.ssl.fastly.net/8a2024183152023c85dc7124365c1afb721450a4/687474703a2f2f626f7765722e696f2f696d672f626f7765722d6c6f676f2e706e67" width="50" height="auto" alt="Bower">
+[bower](http://bower.io) is a package manager for the front-end to help alleviate the pain of retrieving and updating our project dependencies manually (like jQuery or Normalize for example). To install bower dependencies that are controlled through the ``bower.json`` file you must execute the following command…
 
 ```bash
 bower install
@@ -27,6 +41,8 @@ bower install
 - normalize.scss
 - typeplate.scss
 - jquery.placeholder.js
+
+##### Grunt
 
 #### <img src="http://gruntjs.com/img/grunt-logo.png" width="50" height="auto" alt="Grunt">
 

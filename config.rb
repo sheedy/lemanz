@@ -1,3 +1,7 @@
+# Sass Globbing
+# https://github.com/chriseppstein/sass-globbing
+require 'sass-globbing'
+
 # Set this to the root of your project when deployed:
 #http_path = "http://url.com/"
 #

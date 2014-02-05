@@ -45,20 +45,35 @@ module.exports = function(grunt) {
 		// List watch tasks: 'grunt -v'
 		watch: {
 			html: {
-				files: ['**/*.html', '**/*.php', 'img/**/*.{png,jpg,jpeg,gif,webp,svg}']
+				files: [
+					'**/*.html',
+					'**/*.php',
+					'img/**/*.{png,jpg,jpeg,gif,webp,svg}'
+				]
 			},
+
 			sass: {
 				files: ['scss/**/*.scss'],
 				tasks: ['compass:dist']
 			},
+
 			css: {
 				files: ['css/**/*.css']
 			},
+
 			js: {
 				files: ['js/**/*.js']
 			},
+
 			livereload: {
-				files: ['**/*.html','**/*.php', 'css/**/*.css', 'js/**/*.js', 'img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+				files: [
+					'**/*.html',
+					'**/*.php',
+					'css/**/*.css',
+					'js/**/*.js',
+					'img/**/*.{png,jpg,jpeg,gif,webp,svg}'
+				],
+
 				options: { livereload: true }
 			}
 		},
@@ -79,6 +94,7 @@ module.exports = function(grunt) {
 				options: {
 					optimizationLevel: 7
 				},
+
 				files: [
 					{
 						expand: true,
@@ -89,10 +105,12 @@ module.exports = function(grunt) {
 					}
 				]
 			},
+
 			jpg: {
 				options: {
 					progressive: true
 				},
+
 				files: [
 					{
 						expand: true,
@@ -114,6 +132,7 @@ module.exports = function(grunt) {
 		// == JSHint
 		jshint: {
 			files: ['js/**/*.js'],
+
 			options: {
 				curly: true,
 				eqeqeq: true,
@@ -126,6 +145,7 @@ module.exports = function(grunt) {
 					document: true
 				}
 			},
+
 			uses_defaults: ['js/**/*.js']
 		},
 
@@ -141,7 +161,10 @@ module.exports = function(grunt) {
 			basic_and_extras: {
 				files: {
 					// Destiniation 'string' : Source [array]
-					'js/minified/main.min.js' : ['js/plugins.js', 'js/script.js']
+					'js/minified/main.min.js' : [
+						'js/plugins.js',
+						'js/script.js'
+					]
 				}
 			}
 		},
@@ -189,6 +212,7 @@ module.exports = function(grunt) {
 						'hash': '<%= ((new Date()).valueOf().toString()) + (Math.floor((Math.random()*1000000)+1).toString()) %>' // Production
 					}
 				},
+
 				// Source and destination files
 				files: [
 					{
@@ -207,6 +231,7 @@ module.exports = function(grunt) {
 					removeComments: false,
 					collapseWhitespace: false
 				},
+
 				files: {
 					// Destiniation 'string' : Source [array]
 					'<%= project.buildDir %>/index.html': ['<%= project.buildDir %>/index.html']
@@ -244,6 +269,7 @@ module.exports = function(grunt) {
 					'/js/vendor/jquery-1.10.2.min.js',
 				]
 			},
+
 			build: {
 				files: [
 					{
@@ -262,10 +288,15 @@ module.exports = function(grunt) {
 				algorithm: 'md5',
 				length: 8
 			},
+
 			assets: {
 				files: [
 					{
-						src: ['css/main.css', 'js/plugins.js', 'js/script.js']
+						src: [
+							'css/main.css',
+							'js/plugins.js',
+							'js/script.js'
+						]
 					}
 				]
 			}
@@ -273,17 +304,26 @@ module.exports = function(grunt) {
 	});
 
 
-	// == Development Tasks
+	// Development Tasks
 	grunt.registerTask('default', ['watch']);
 	grunt.registerTask('hint', ['jshint']);
 	grunt.registerTask('test', ['qunit']);
 
-	// == Build Tasks
+	// Build Tasks
 	grunt.registerTask('imgmin', ['imagemin']);
-	grunt.registerTask('build', ['copy', 'concat', 'uglify', 'useminPrepare', 'usemin', 'replace']);
+
+	grunt.registerTask('build', [
+		'copy',
+		'concat',
+		'uglify',
+		'useminPrepare',
+		'usemin',
+		'replace'
+	]);
+
 	grunt.registerTask('cachebust', ['asset_cachebuster']);
 	grunt.registerTask('filerev', ['rev']);
 
-	// == Maintenance
+	// Maintenance
 	grunt.registerTask('update', ['devUpdate']);
 };

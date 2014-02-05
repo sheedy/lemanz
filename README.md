@@ -26,6 +26,7 @@ bower install
 ```
 - normalize.scss
 - typeplate.scss
+- jquery.placeholder.js
 
 #### <img src="http://gruntjs.com/img/grunt-logo.png" width="50" height="auto" alt="Grunt">
 

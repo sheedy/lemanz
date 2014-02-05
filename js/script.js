@@ -46,8 +46,8 @@ $(function() {
 
 
 // Disable Hover
+// thecssninja.com/javascript/pointer-events-60fps
 // ===========================================
-// http://www.thecssninja.com/javascript/pointer-events-60fps
 
 var body = document.body,
 	timer;
@@ -63,6 +63,13 @@ window.addEventListener('scroll', function() {
 		body.classList.remove('disable-hover');
 	},500);
 }, false);
+
+
+// Placeholder Polyfill
+// github.com/mathiasbynens/jquery-placeholder
+// ===========================================
+
+$('input, textarea').placeholder();
 
 
 // SVG Magic

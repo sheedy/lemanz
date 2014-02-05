@@ -72,6 +72,17 @@ window.addEventListener('scroll', function() {
 $('input, textarea').placeholder();
 
 
+// Matchmedia Polyfill
+// github.com/paulirish/matchMedia.js
+// ===========================================
+
+// Width Detection
+if (matchMedia('only screen and (max-width: 480px)').matches) {}
+
+// Orientation Detection
+if (matchMedia('all and (orientation:landscape)').matches) {}
+
+
 // SVG Magic
 // ===========================================
 

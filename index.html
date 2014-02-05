@@ -63,6 +63,11 @@
 					// https://github.com/scottjehl/Respond
 					test: Modernizr.mq('only all'),
 					nope: 'js/libs/respond.js'
+				},
+				{
+					// Matchmedia Polyfill
+					test: window.matchMedia,
+					nope: ['js/libs/matchMedia.js', 'js/libs/matchMedia.addListener.js']
 				}
 			]);
 		</script>

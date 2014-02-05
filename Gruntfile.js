@@ -1,21 +1,11 @@
-/*
-.|'''''|                            ||    
-|| .                                ||    
-|| |''|| '||''| '||  ||` `||''|,  ''||''  
-||    ||  ||     ||  ||   ||  ||    ||    
-`|....|' .||.    `|..'|. .||  ||.   `|..' The JavaScript Task Runner
-*/
-
+// Grunt: The JavaScript Task Runner
 module.exports = function(grunt) {
 
 	// Grunt Loaded Tasks
 	// http://chrisawren.com/posts/Advanced-Grunt-tooling
-	// ------------------------------------------------
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-
 	// Grunt Config
-	// ------------------------------------------------
 	grunt.initConfig({
 
 		// == JSON Grunt Package
@@ -52,8 +42,7 @@ module.exports = function(grunt) {
 		},
 
 		// == Watch Task
-		// List all your watched tasks
-		// grunt -v
+		// List watch tasks: 'grunt -v'
 		watch: {
 			html: {
 				files: ['**/*.html', '**/*.php', 'img/**/*.{png,jpg,jpeg,gif,webp,svg}']
@@ -118,7 +107,7 @@ module.exports = function(grunt) {
 
 		// == qunit Tests
 		qunit: {
-			// grunt qunit will test all .html.php file extensions
+			// grunt qunit will test all .html & .php file extensions
 			all: ['**/*.html', '**/*.php']
 		},
 
@@ -147,6 +136,7 @@ module.exports = function(grunt) {
 				banner: '<%= meta.banner %>',
 				separator: ';'
 			},
+
 			// Allows for multiple files
 			basic_and_extras: {
 				files: {
@@ -289,7 +279,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('test', ['qunit']);
 
 	// == Build Tasks
-	grunt.registerTask('imgopt', ['imagemin']);
+	grunt.registerTask('imgmin', ['imagemin']);
 	grunt.registerTask('build', ['copy', 'concat', 'uglify', 'useminPrepare', 'usemin', 'replace']);
 	grunt.registerTask('cachebust', ['asset_cachebuster']);
 	grunt.registerTask('filerev', ['rev']);

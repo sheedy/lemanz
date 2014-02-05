@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 
 		// == Global Project Config
 		project: {
-			devDir: '.',
+			devDir: 'src',
 			buildDir: 'dist',
 			development: '<%= project.devDir %>',
 			production: '<%= project.buildDir %>'

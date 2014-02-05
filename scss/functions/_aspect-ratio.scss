@@ -1,25 +1,15 @@
 // ============================================================
-// $Aspect Ratio
+// $Aspect Ratios
 // ============================================================
 
-// Pixels are used by default if no $unit argument is passed.
-// Examples use a 16:9 aspect ratio (i.e. 9/16)
+// @returns Aspect Ratio Percentage
+// padding-bottom: aspect-ratio-fixed(16,9); // @returns 56.25%
+@function aspect-ratio($ratio-numerator, $ratio-denominator) {
+	@return (($ratio-denominator / $ratio-numerator) * 100%);
+}
 
-// Pixel
-// height: aspect(500, 9/16);
-
-// Percent
-// height: aspect(500, 9/16, '%');
-
-// Ems
-// height: aspect(500, 9/16, '');
-
-@function aspect($width, $ratio, $unit:px) {
-    @if ($unit == px) {
-        @return ($width * ($ratio) + px);
-    }@elseif ($unit == '%') {
-        @return ($width * ($ratio) * 1.00%);
-    }@else {
-        @return ($width * ($ratio) * 1em);
-    }
+// @returns Based on Fixed Image Dimensions
+// padding: 0 0 aspect-ratio(1080, 720); // @returns 66.666666666667%
+@function aspect-ratio-fixed($w, $h) {
+	@return ($h / $w) * 100%;
 }

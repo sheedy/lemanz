@@ -17,18 +17,34 @@ A starting point for all my personal/work-related Sass projects. Feel free to pu
 
 ### Installation
 
-**Install Dependencies**
+**Project Dependencies**
 
 ##### Bundler
-Use the ``bundle`` command to install the necessary gems like Compass which is used for this projects style sheets. (**Hint**: All the cool kids use [ruby version manager](https://rvm.io) to organize ``gemset`` dependencies):
-If you don't have [bundler](http://gembundler.com) installed you'll need to run ``gem install bundler`` before using ``bundle install``.
+
+Depending on your tastes you have a few options to manage gemset dependencies. The cool kids like [RVM](https://rvm.io) and the others
+like [rbenv](https://github.com/sstephenson/rbenv). It's a pick your poison kind of deal. The reality is that [RVM](https://rvm.io) 
+is much easier and cleaner to manage/isolate gemsets. Totally up to you though.
+
+Gem dependencies are installed using [Bundler](http://bundler.io). Bundler maintains a consistent environment for ruby applications. It tracks an application's code and 
+the rubygems it needs to run, so that an application will always have the exact gems (and versions) that it needs.
+
+If you don't have Bundler installed you can install it like so:
 
 ```bash
-bundle install
+$ gem install bundler
 ```
+
+Once Bundler is installed run the following command:
+
+```bash
+$ bundle install
+```
+
 - Compass Gem
 - Sass Gem
 - Sass Globbing Gem
+
+You can always check if the correct Gems are installed by running the bash command ``gem list`` which will list all your gem dependencies installed.
 
 ##### Bower
 

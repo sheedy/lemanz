@@ -6,6 +6,18 @@
 
 
 // ==========================================================================
+// $Compass Sprites
+// http://appendto.com/2014/02/screencast-speed-image-spriting-compass
+// http://compass-style.org/help/tutorials/spriting/magic-selectors
+// http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1
+// ==========================================================================
+
+$icons-spacing: 0px; // Increase the spacing between images within the sprite.
+@import "icons/*.png";
+@include all-icons-sprites(true); // .icons-[image-file-name] {}
+
+
+// ==========================================================================
 // $Variables
 // ==========================================================================
 

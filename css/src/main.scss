@@ -81,8 +81,8 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 // 1. Normalize.scss @Since v2.1.3
 // 2. Typeplate.scss @Since v1.1.2
 
-@import "../bower_components/normalize.scss/normalize"; // 1
-@import "../bower_components/typeplate/scss/typeplate"; // 2
+@import "../../bower_components/normalize.scss/normalize"; // 1
+@import "../../bower_components/typeplate/scss/typeplate"; // 2
 
 
 // ==========================================================================

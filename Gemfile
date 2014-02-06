@@ -6,11 +6,11 @@
 # Rubygems Source
 source "https://rubygems.org"
 
-#Ruby Version
-ruby "2.0.0"
+# Ruby Version
+# ruby "0.0.0"
 
-#Gem Dependencies - Compass
+# Gem Dependencies - Compass
 gem "compass", ">= 0.12.2"
 
-#Gem Dependencies - Sass Globbing
+# Gem Dependencies - Sass Globbing
 gem "sass-globbing", ">= 1.1.0"

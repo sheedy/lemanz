@@ -29,7 +29,7 @@ require 'sass-globbing'
 
 #Project Assets Location
 css_dir = "css"
-sass_dir = "scss"
+sass_dir = "css/src"
 images_dir = "img"
 javascripts_dir = "js"
 

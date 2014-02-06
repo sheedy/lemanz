@@ -1,0 +1,42 @@
+// http://thesassway.com/intermediate/if-for-each-while
+// http://sass-lang.com/documentation/Sass/Script/Functions.html#length-instance_method
+@mixin font-features($name, $value) {
+	@each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+		@if $vendor == '-moz-' {
+			#{$vendor}#{$name}: "#{$value=1}";
+		} @esle {
+			#{$vendor}#{$name}: "#{$value}";
+		}
+	}
+}
+
+// %ligatures {
+// 	-moz-font-feature-settings: "liga=1, dlig=1";
+// 	-ms-font-feature-settings: "liga", "dlig";
+// 	-webkit-font-feature-settings: "liga", "dlig";
+// 	-o-font-feature-settings: "liga", "dlig";
+// 	font-feature-settings: "liga", "dlig";
+// 	text-rendering:optimizeLegibility;
+// }
+
+%ligatures {
+	@include font-features('font-feature-settings', 'liga=1, dlig=1');
+	text-rendering:optimizeLegibility;
+}
+
+%fontName {
+	.wf-loading & {
+		visibility: hidden;
+	}
+	.wf-active & {
+		font-family: [font-family-name];
+		font-style: [font-family-style];
+		font-weight: [font-family-weight];
+		visibility: visible;
+	}
+}
+
+.typekit-font-name {
+	@extend %fontName;
+	@extend %ligatures;
+}

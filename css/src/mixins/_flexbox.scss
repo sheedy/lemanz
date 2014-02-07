@@ -1,8 +1,9 @@
 // Flexbox Mixins
 // http://philipwalton.github.io/solved-by-flexbox/
 // https://github.com/philipwalton/solved-by-flexbox
-//
+// 
 // Copyright (c) 2013 Brian Franco
+// https://github.com/mastastealth/sass-flex-mixin
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -32,11 +33,11 @@
 // * Final standards syntax (FF, IE11, Opera 12.1)
 //
 // This was inspired by:
-//
+// 
 // * http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/
-//
+// 
 // With help from:
-//
+// 
 // * http://w3.org/tr/css3-flexbox/
 // * http://the-echoplex.net/flexyboxes/
 // * http://msdn.microsoft.com/en-us/library/ie/hh772069(v=vs.85).aspx
@@ -44,7 +45,7 @@
 // * http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/
 // * https://developer.mozilla.org/en-us/docs/web/guide/css/flexible_boxes
 
-//----------------------------------------------------------------------
+// ==========================================================================
 
 // Flexbox Containers
 //
@@ -52,11 +53,13 @@
 // container box.
 //
 // The 'inline-flex' value causes an element to generate a inline-level
-// flex container box.
+// flex container box. 
 //
 // display: flex | inline-flex
 //
 // http://w3.org/tr/css3-flexbox/#flex-containers
+//
+// (Placeholder selectors for each type, for those who rather @extend)
 
 @mixin flexbox {
 	display: -webkit-box;
@@ -66,7 +69,10 @@
 	display: flex;
 }
 
-//----------------------------------
+%flexbox { @include flexbox; }
+
+
+// ==========================================================================
 
 @mixin inline-flex {
 	display: -webkit-inline-box;
@@ -76,13 +82,16 @@
 	display: inline-flex;
 }
 
-//----------------------------------------------------------------------
+%inline-flex { @include inline-flex; }
+
+
+// ==========================================================================
 
 // Flexbox Direction
 //
 // The 'flex-direction' property specifies how flex items are placed in
 // the flex container, by setting the direction of the flex container's
-// main axis. This determines the direction that flex items are laid out in.
+// main axis. This determines the direction that flex items are laid out in. 
 //
 // Values: row | row-reverse | column | column-reverse
 // Default: row
@@ -108,16 +117,18 @@
 	-ms-flex-direction: $value;
 	flex-direction: $value;
 }
-	// Shorter version:
-	@mixin flex-dir($value: false) { @include flex-direction($value); }
 
-//----------------------------------------------------------------------
+// Shorter version:
+@mixin flex-dir($value: false) { @include flex-direction($value); }
+
+
+// ==========================================================================
 
 // Flexbox Wrap
 //
 // The 'flex-wrap' property controls whether the flex container is single-line
 // or multi-line, and the direction of the cross-axis, which determines
-// the direction new lines are stacked in.
+// the direction new lines are stacked in. 
 //
 // Values: nowrap | wrap | wrap-reverse
 // Default: nowrap
@@ -130,13 +141,14 @@
 	-moz-flex-wrap: $value;
 	@if $value == nowrap {
 		-ms-flex-wrap: none;
-	} @else {
-		-ms-flex-wrap: $value;
+	} @else { 
+		-ms-flex-wrap: $value; 
 	}
 	flex-wrap: $value;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox Flow (shorthand)
 //
@@ -144,7 +156,7 @@
 // and 'flex-wrap' properties, which together define the flex container's
 // main and cross axes.
 //
-// Values: <flex-direction> | <flex-wrap>
+// Values: <flex-direction> | <flex-wrap> 
 // Default: row nowrap
 //
 // http://w3.org/tr/css3-flexbox/#flex-flow-property
@@ -157,7 +169,8 @@
 	flex-flow: $values;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox Order
 //
@@ -176,7 +189,8 @@
 	order: $int;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox Grow
 //
@@ -195,7 +209,8 @@
 	flex-grow: $int;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox Shrink
 //
@@ -213,16 +228,17 @@
 	flex-shrink: $int;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox Basis
 //
-// The 'flex-basis' property sets the flex basis. Negative lengths are invalid.
+// The 'flex-basis' property sets the flex basis. Negative lengths are invalid. 
 //
-// Values: Like "width"
+// Values: Like "width" 
 // Default: auto
 //
-// http://w3.org/tr/css3-flexbox/#flex-shrink-property
+// http://www.w3.org/TR/css3-flexbox/#flex-basis-property
 
 @mixin flex-basis($value: auto) {
 	-webkit-flex-basis: $value;
@@ -231,7 +247,8 @@
 	flex-basis: $value;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox "Flex" (shorthand)
 //
@@ -255,7 +272,8 @@
 	flex: $fg $fs $fb;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox Justify Content
 //
@@ -291,10 +309,12 @@
 	-moz-justify-content: $value;
 	justify-content: $value;
 }
-	// Shorter version:
-	@mixin flex-just($value: flex-start) { @include justify-content($value); }
 
-//----------------------------------------------------------------------
+// Shorter version:
+@mixin flex-just($value: flex-start) { @include justify-content($value); }
+
+
+// ==========================================================================
 
 // Flexbox Align Items
 //
@@ -304,7 +324,7 @@
 // container's items, including anonymous flex items. 'align-self' allows
 // this default alignment to be overridden for individual flex items. (For
 // anonymous flex items, 'align-self' always matches the value of 'align-items'
-// on their associated flex container.)
+// on their associated flex container.) 
 //
 // Values: flex-start | flex-end | center | baseline | stretch
 // Default: stretch
@@ -327,7 +347,8 @@
 	align-items: $value;
 }
 
-//----------------------------------
+
+// ==========================================================================
 
 // Flexbox Align Self
 //
@@ -348,7 +369,8 @@
 	align-self: $value;
 }
 
-//----------------------------------------------------------------------
+
+// ==========================================================================
 
 // Flexbox Align Content
 //

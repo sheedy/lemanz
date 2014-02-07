@@ -1,9 +1,10 @@
-// ============================================================
+// ==========================================================================
 // Placeholders
-// ============================================================
+// https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss
+// ==========================================================================
 
-// Example:
-// input { @include placeholder($color); }
+// @example
+// input { @include placeholder-color($color); }
 
 @mixin placeholder-color($color) {
 	// Chrome, Safari, Opera
@@ -28,17 +29,22 @@
 
 
 // @example
-// .selector { @include x-placeholder { color: #bada55; font-weight: bold; } }
-// https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss
+// .selector { @include placeholder-styles { color: #bada55; font-weight: bold; } }
 
 @mixin placeholder-styles {
+
+	// Chrome, Safari, Opera
 	&::-webkit-input-placeholder {
-		@content // Chrome, Safari, Opera
+		@content
 	}
+
+	// Firefox 19+
 	&::-moz-placeholder {
-		@content // Firefox 19+
+		@content
 	}
+
+	// IE 10+
 	&:-ms-input-placeholder {
-		@content // IE 10+
+		@content
 	}
 }

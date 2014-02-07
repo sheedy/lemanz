@@ -2,6 +2,12 @@
 
 A starting point for all my personal/work-related Sass projects. Feel free to pull from anything you like in this repo or not. Additionally includes special JavaScript starting points/libraries like the jQuery plugin SVGMagic, HammerJS, RespondJS and MatchMedia Polyfill.
 
+#### **Browser Support**
+I aim to support the following browsers and their associated versions throughout all my projects.
+
+![ie](https://raw2.github.com/alrra/browser-logos/master/internet-explorer-tile/internet-explorer-tile_32x32.png) 8+ ![opera](https://raw2.github.com/alrra/browser-logos/master/opera/opera_32x32.png) 17+ ![safari](https://raw2.github.com/alrra/browser-logos/master/safari/safari_32x32.png) 6+ ![chrome](https://raw2.github.com/alrra/browser-logos/master/chrome/chrome_32x32.png) 32+ ![https://raw2.github.com/alrra/browser-logos/master/firefox/firefox_32x32.png](https://raw2.github.com/alrra/browser-logos/master/firefox/firefox_32x32.png) 26+ ![ios](https://raw2.github.com/alrra/browser-logos/master/safari-ios/safari-ios_32x32.png) 6+
+
+
 ### **Project Stack**
 
 - Node v0.10.24 <img src="https://www.codersgrid.com/wp-content/uploads/2013/05/nodejs-image-processing.png" width="40" height="auto" alt="">

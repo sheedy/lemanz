@@ -1,0 +1,36 @@
+// ==========================================================================
+// $Typekit : Kit Size = 0K
+// ==========================================================================
+
+// Replace '%font-family-name' with your custom font-family
+// @example
+// %adelleLight {...}
+%font-family-name {
+
+	// Typekit Loading Class
+	.wf-loading & {
+		visibility: hidden; // hide on load to control FOUT
+	}
+
+	// Typekit Active Class
+	.wf-active & {
+		font-family: "",sans-serif; // replace your font-family here
+		font-style: normal; // replace your font-family style here
+		font-weight: 700; // replace your font-family weight here
+		visibility: visible; // show the font gracefully for FOUT
+	}
+}
+
+// Font Family Class
+// @example
+// .adelle-light { @extend %adelleLight; }
+.font-family-name {
+	@extend %font-family-name;
+}
+
+// Element Target
+// @example
+// .button--primary { @extend .adelle-light; }
+.element-target {
+    @extend .font-family-name;
+}

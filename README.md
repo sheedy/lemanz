@@ -5,7 +5,7 @@ A starting point for all my personal/work-related projects using Sass and Compas
 #### **Browser Support**
 I aim to support the following browsers and their associated versions throughout all my projects.
 
-![ie](https://raw2.github.com/alrra/browser-logos/master/internet-explorer-tile/internet-explorer-tile_32x32.png) 8+ ![opera](https://raw2.github.com/alrra/browser-logos/master/opera/opera_32x32.png) 17+ ![safari](https://raw2.github.com/alrra/browser-logos/master/safari/safari_32x32.png) 6+ ![chrome](https://raw2.github.com/alrra/browser-logos/master/chrome/chrome_32x32.png) 32+ ![https://raw2.github.com/alrra/browser-logos/master/firefox/firefox_32x32.png](https://raw2.github.com/alrra/browser-logos/master/firefox/firefox_32x32.png) 26+ ![ios](https://raw2.github.com/alrra/browser-logos/master/safari-ios/safari-ios_32x32.png) 6+
+![ie](https://raw2.github.com/alrra/browser-logos/master/internet-explorer-tile/internet-explorer-tile_32x32.png) 8+ ![opera](https://raw2.github.com/alrra/browser-logos/master/opera/opera_32x32.png) 17+ ![safari](https://raw2.github.com/alrra/browser-logos/master/safari/safari_32x32.png) 6+ ![chrome](https://raw2.github.com/alrra/browser-logos/master/chrome/chrome_32x32.png) 32+ ![https://raw2.github.com/alrra/browser-logos/master/firefox/firefox_32x32.png](https://raw2.github.com/alrra/browser-logos/master/firefox/firefox_32x32.png) 26+ ![ios](https://raw2.github.com/alrra/browser-logos/master/safari-ios/safari-ios_32x32.png) 6+ ![chrome for android](https://raw2.github.com/alrra/browser-logos/master/chrome-android/chrome-android_32x32.png) Android 4+
 
 
 ### **Project Stack**

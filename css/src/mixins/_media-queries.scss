@@ -2,7 +2,7 @@
 // Media Query Helper
 // ============================================================
 
-// Variable Dependencies : scss/utilities/_vars.scss
+// Variable Dependencies : css/src/utilities/_vars.scss
 // Syntax & Accepted Values :
 // @include mediaQuery([$min, $max, null], [$desktop, $pre-desktop, $talet, $pre-tablet, $palm, $post-palm]) {}
 @mixin mediaQuery($constraint, $viewport1, $viewport2: null) {

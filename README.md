@@ -97,3 +97,9 @@ npm install
 <img src="http://httpd.apache.org/images/httpd_logo_wide_new.png" width="300" height="auto" alt="apache">
 
 - Apache config follows the HTML5 Boilerplate, but adds the ability to serve ``.svgz`` along with supporting cache busting using the method ``main.123456.css``. Also strips ``.php`` files from their file extension.
+
+### **Additional Resources**
+
+- [https://github.com/sturobson/Sassifaction](https://github.com/sturobson/Sassifaction)
+- [https://github.com/toddmotto/fireshell](https://github.com/toddmotto/fireshell)
+- [https://github.com/drublic/Sass-Mixins](https://github.com/drublic/Sass-Mixins)

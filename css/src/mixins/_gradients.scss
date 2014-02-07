@@ -91,9 +91,7 @@
 
 		@if $auto == true {
 			$dump : $item $stripes * ($i - 1), $item $stripes * $i;
-		}
-
-		@else {
+		} @else {
 
 			@if $i > 1 {
 				$prev : nth($colors, $i - 1);
@@ -110,7 +108,7 @@
 }
 
 
-// Demo 1
+// @demo1
 // Passing a collection of color-stops to the mixin
 // Direction is ommited since default is top to bottom
 //
@@ -122,27 +120,29 @@
 //
 // $argument: zip($colors, $stops);
 
+// @example
+// h1 { @include stripes($color-stops-1); }
 $color-stops-1: #1abc9c 18%, #27ae60 33%, #3498db 46%, #16a085 55%, #2980b9 65%, #34495e 83%, #1abc9c 100%;
 
-// h1 { @include stripes($color-stops-1); }
 
-// Demo 2 (less useful)
+// @demo2 (less useful)
 // Creating a collection of color-stops in a loop with hsl()
 // Also known as "pooping a rainbow"
 
+// @example
 // .demo-2 {
-//  $colors: (); /* Contains colors */
-//  $stops:  (); /* Contains stops  */
-	
-//  @for $i from 1 through 15 {
-//      $colors : append($colors, hsl($i*10, 75%, 50%));
-//      $stops  : append($stops , unquote('#{$i*6}%'));
-//  }
+// 	$colors: (); // Contains colors
+// 	$stops:  (); // Contains stops 
 
-//  $color-stops-2: zip($colors, $stops); /* Zipping both lists */
-	
-//   @include stripes($color-stops-2, "to right");
-//  // If you want all stripes to have the same size,
-//  // you can pass a list of colors without stops
-//  // like $colors
+// 	@for $i from 1 through 15 {
+// 		$colors : append($colors, hsl($i*10, 75%, 50%));
+// 		$stops  : append($stops , unquote('#{$i*6}%'));
+// 	}
+
+// 	$color-stops-2: zip($colors, $stops); // Zipping both lists
+
+// 	@include stripes($color-stops-2, "to right");
+// 	If you want all stripes to have the same size,
+// 	you can pass a list of colors without stops
+// 	like $colors
 // }

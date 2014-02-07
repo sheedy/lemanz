@@ -1,6 +1,6 @@
 # Lemanz
 
-A starting point for all my personal/work-related Sass projects. Feel free to pull from anything you like in this repo or not. Additionally includes special JavaScript starting points/libraries like the jQuery plugin SVGMagic, HammerJS, RespondJS and MatchMedia Polyfill.
+A starting point for all my personal/work-related projects using Sass and Compass. Feel free to pull from anything you like in this repo or not. Additionally includes special JavaScript starting points/libraries like the jQuery plugin SVGMagic, HammerJS, RespondJS and MatchMedia Polyfill.
 
 #### **Browser Support**
 I aim to support the following browsers and their associated versions throughout all my projects.

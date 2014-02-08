@@ -1,0 +1,5 @@
+{
+	"name": "lemanz",
+	"description": "A starting point for all my personal/work-related projects using Sass and Compass. Feel free to pull from anything you like in this repo or not. Additionally includes special JavaScript starting points/libraries like the jQuery plugin SVGMagic, HammerJS, RespondJS and MatchMedia Polyfill.",
+	"tags": ["sass", "compass","mixin library", "boilerplate", "starter kit", "bower", "grunt"]
+}

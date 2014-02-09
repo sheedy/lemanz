@@ -93,8 +93,7 @@ module.exports = function(grunt) {
 			png: {
 				options: {
 					optimizationLevel: 7,
-					// https://github.com/gruntjs/grunt-contrib-imagemin/issues/140
-					cache: false
+					cache: false // https://github.com/gruntjs/grunt-contrib-imagemin/issues/140
 				},
 
 				files: [
@@ -111,8 +110,7 @@ module.exports = function(grunt) {
 			jpg: {
 				options: {
 					progressive: true,
-					// https://github.com/gruntjs/grunt-contrib-imagemin/issues/140
-					cache: false
+					cache: false // https://github.com/gruntjs/grunt-contrib-imagemin/issues/140
 				},
 
 				files: [

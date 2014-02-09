@@ -92,15 +92,17 @@ module.exports = function(grunt) {
 		imagemin: {
 			png: {
 				options: {
-					optimizationLevel: 7
+					optimizationLevel: 7,
+					// https://github.com/gruntjs/grunt-contrib-imagemin/issues/140
+					cache: false
 				},
 
 				files: [
 					{
 						expand: true,
-						cwd: 'img',
+						cwd: 'img/src/',
 						src: ['**/*.png'],
-						dest: 'img',
+						dest: 'img/dist/',
 						ext: '.png'
 					}
 				]
@@ -108,15 +110,17 @@ module.exports = function(grunt) {
 
 			jpg: {
 				options: {
-					progressive: true
+					progressive: true,
+					// https://github.com/gruntjs/grunt-contrib-imagemin/issues/140
+					cache: false
 				},
 
 				files: [
 					{
 						expand: true,
-						cwd: 'img',
+						cwd: 'img/src/',
 						src: ['**/*.jpg'],
-						dest: 'img',
+						dest: 'img/dist/',
 						ext: '.jpg'
 					}
 				]

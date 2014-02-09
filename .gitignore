@@ -8,7 +8,7 @@
 node_modules
 
 #Build Directory
-/dist
+dist
 
 #Bower Directory
 bower_components

@@ -62,8 +62,9 @@ bower install
 ```
 - normalize.scss
 - typeplate.scss
-- css-modal/modal.scss
+- css-modal.scss
 - jquery.placeholder.js
+- jquery.scrollTo.js
 
 ##### Grunt
 

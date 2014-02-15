@@ -26,6 +26,8 @@ window.addEventListener('scroll', function() {
 
 // @example
 // <a href="#section1" class="lemanz-sl">Home</a>
+
+// @call
 // $('.lemanz-sl').on('click', lemanzSimpleLink);
 // $('.lemanz-sl').on('touchstart', lemanzSimpleLink);
 
@@ -36,6 +38,26 @@ function lemanzSimpleLink(event) {
 	}, 600);
 
 	event.preventDefault();
+}
+
+
+// ======================================================================================
+// Flesler ScrollTo
+// https://github.com/flesler/jquery.scrollTo
+// ======================================================================================
+
+// @example
+// <a href="#target1" class="flesler-anchor">Anchor1</a>
+
+// @call
+// $('.flesler-anchor').on('click', fleslerScrollTo);
+// $('.flesler-anchor').on('touchstart', fleslerScrollTo);
+
+function fleslerScrollTo(event) {
+	//$.scrollTo works EXACTLY the same way, but scrolls the whole screen
+	$.scrollTo(this.hash, 200);
+	event.preventDefault();
+	return false;
 }
 
 

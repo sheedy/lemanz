@@ -1,6 +1,7 @@
+// ======================================================================================
 // Disable Hover
 // thecssninja.com/javascript/pointer-events-60fps
-// ===========================================
+// ======================================================================================
 
 var body = document.body,
 	timer;
@@ -18,8 +19,29 @@ window.addEventListener('scroll', function() {
 }, false);
 
 
+// ======================================================================================
+// Lemanz Simple Link
+// http://codepen.io/grayghostvisuals/pen/b4ae7ce2aa8433862651107120bce644
+// ======================================================================================
+
+// @example
+// <a href="#section1" class="lemanz-sl">Home</a>
+// $('.lemanz-sl').on('click', lemanzSimpleLink);
+// $('.lemanz-sl').on('touchstart', lemanzSimpleLink);
+
+function lemanzSimpleLink(event) {
+
+	$("html, body").animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 600);
+
+	event.preventDefault();
+}
+
+
+// ======================================================================================
 // SVG Magic
-// ===========================================
+// ======================================================================================
 
 // SVGMagic also supports backgroundimages. You need 
 // to parse the div containing the backgroundimage 
@@ -46,16 +68,18 @@ $('img[src*=".svgz"]').svgmagic({
 });
 
 
+// ======================================================================================
 // Placeholder Polyfill
 // github.com/mathiasbynens/jquery-placeholder
-// ===========================================
+// ======================================================================================
 
 $('input, textarea').placeholder();
 
 
+// ======================================================================================
 // Matchmedia Polyfill
 // github.com/paulirish/matchMedia.js
-// ===========================================
+// ======================================================================================
 
 // Width Detection
 if (matchMedia('only screen and (max-width: 480px)').matches) {}

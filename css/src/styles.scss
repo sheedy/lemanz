@@ -1,4 +1,21 @@
 // ==========================================================================
+// $Sass Globbing Notes
+// http://fuseinteractive.ca/blog/automatic-sass-imports-sass-globbing
+// ==========================================================================
+
+// @example
+// @import 'layouts/*';
+
+// All partials inside 'layouts' are imported.
+// By default, partials are imported alphabetically.
+// In order to import them in a specific order
+// we can number the partial files like so…
+//
+// _1.layout-small.scss
+// _2.layout-wide.scss
+
+
+// ==========================================================================
 // $Compass
 // ==========================================================================
 

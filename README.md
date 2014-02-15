@@ -62,6 +62,7 @@ bower install
 ```
 - normalize.scss
 - typeplate.scss
+- css-modal/modal.scss
 - jquery.placeholder.js
 
 ##### Grunt

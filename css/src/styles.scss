@@ -130,8 +130,10 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 // ==========================================================================
 
 // 1. CSSWizardry Grids & Settings
+// 2. Containers
 
 @import "layout/grid/csswizardry-grids"; // 1
+@import "layout/containers"; // 2
 
 
 // ==========================================================================

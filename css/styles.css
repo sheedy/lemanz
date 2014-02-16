@@ -33,6 +33,16 @@
   text-shadow: none;
 }
 
+.ligatures {
+  length: 2;
+  -webkit-font-feature-settings: "liga, dlig";
+  -moz-font-feature-settings: "liga, dlig=1";
+  -ms-font-feature-settings: "liga, dlig";
+  -o-font-feature-settings: "liga, dlig";
+  font-feature-settings: "liga, dlig";
+  text-rendering: optimizeLegibility;
+}
+
 /* normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* normalize.scss v2.1.3 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 /* ==========================================================================
@@ -987,16 +997,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.wf-loading .font-family-name, .wf-loading .element-target {
-  visibility: hidden;
-}
-.wf-active .font-family-name, .wf-active .element-target {
-  font-family: "",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  visibility: visible;
-}
-
 /*------------------------------------*\
     $CSSWIZARDRY-GRIDS
 \*------------------------------------*/
@@ -1880,6 +1880,13 @@ a:hover {
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
  */
+.wrap {
+  max-width: 1024px;
+  margin: auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
 .undolist {
   list-style-type: none;
   padding: 0;

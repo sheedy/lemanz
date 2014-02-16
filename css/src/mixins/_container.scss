@@ -3,7 +3,7 @@
 // ============================================================
 
 @mixin container($container-max-width, $gutter) {
-    max-width: $contain-mw;
+    max-width: $container-max-width;
     margin: auto;
     padding: 0 $gutter;
     width: 100%;

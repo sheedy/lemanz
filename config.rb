@@ -3,6 +3,10 @@
 #
 require 'sass-globbing'
 
+# Breakpoint
+# https://github.com/Team-Sass/breakpoint/wiki/Installation#using-breakpoint
+require 'breakpoint'
+
 # Set this to the root of your project when deployed:
 #
 # http_path = "http://url.com/"

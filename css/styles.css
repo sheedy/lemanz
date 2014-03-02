@@ -1,28 +1,29 @@
 @charset "UTF-8";
 .icons-sprite, .icons-building, .icons-camera, .icons-leaf, .icons-plane {
-  background: url('../img/icons-sc3546bf644.png') no-repeat;
+  background-image: url('../img/icons-s372e649a02.png');
+  background-repeat: no-repeat;
 }
 
 .icons-building {
-  background-position: 0 -468px;
-  height: 156px;
-  width: 156px;
-}
-
-.icons-camera {
-  background-position: 0 -312px;
-  height: 156px;
-  width: 156px;
-}
-
-.icons-leaf {
   background-position: 0 0;
   height: 156px;
   width: 156px;
 }
 
-.icons-plane {
+.icons-camera {
   background-position: 0 -156px;
+  height: 156px;
+  width: 156px;
+}
+
+.icons-leaf {
+  background-position: 0 -312px;
+  height: 156px;
+  width: 156px;
+}
+
+.icons-plane {
+  background-position: 0 -468px;
   height: 156px;
   width: 156px;
 }
@@ -249,8 +250,8 @@ dfn {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -398,17 +399,17 @@ fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
   border-color: #c0c0c0;
-  border-top-style: solid;
   border-top-width: 0.0625em;
+  border-top-style: solid;
   padding-top: 0.4625em;
-  border-bottom-style: solid;
   border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
   padding-bottom: 0.9125em;
-  border-left-style: solid;
   border-left-width: 0.0625em;
+  border-left-style: solid;
   padding-left: 0.875em;
-  border-right-style: solid;
   border-right-width: 0.0625em;
+  border-right-style: solid;
   padding-right: 0.875em;
 }
 
@@ -505,8 +506,8 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -525,8 +526,8 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 2 */
 }
@@ -598,13 +599,11 @@ table {
   src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
   unicode-range: U+0026;
 }
-
 @font-face {
   font-family: "Ampersand";
   src: local("Georgia");
   unicode-range: U+270C;
 }
-
 body {
   word-wrap: break-word;
 }
@@ -953,13 +952,13 @@ textarea {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:before, *:after {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2004,8 +2003,7 @@ a:hover {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p,
   h2,
   h3 {

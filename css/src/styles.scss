@@ -23,6 +23,14 @@
 
 
 // ==========================================================================
+// $Breakpoint
+// https://github.com/Team-Sass/breakpoint/wiki/Installation#using-breakpoint
+// ==========================================================================
+
+@import "breakpoint";
+
+
+// ==========================================================================
 // $Compass Sprites
 // http://appendto.com/2014/02/screencast-speed-image-spriting-compass
 // http://compass-style.org/help/tutorials/spriting/magic-selectors
@@ -38,11 +46,7 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 // $Variables
 // ==========================================================================
 
-// 1. Global Variables
-// 2. Typography Variables
-
-@import "variables/vars-global"; // 1
-@import "variables/vars-typeplate"; // 2
+@import "variables/global";
 
 
 // ==========================================================================

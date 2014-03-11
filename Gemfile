@@ -11,8 +11,8 @@ source "https://rubygems.org"
 
 # Gem Dependencies - Compass & Sass
 # Required Deps for Breakpoint Gem
-gem "sass", "~>3.3.0.rc.2"
-gem "compass", "~>1.0.0.alpha.13"
+gem "sass", "~>3.3.0.rc.5"
+gem "compass", "~>1.0.0.alpha.18"
 
 # Breakpoint
 # https://github.com/Team-Sass/breakpoint/wiki/Installation

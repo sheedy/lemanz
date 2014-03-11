@@ -1,9 +1,9 @@
 // Grunt: The JavaScript Task Runner
 module.exports = function(grunt) {
 
-	// Grunt Loaded Tasks
-	// http://chrisawren.com/posts/Advanced-Grunt-tooling
-	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	// Load NPM Tasks
+	// https://github.com/shootaroo/jit-grunt
+	require('jit-grunt')(grunt);
 
 	// Grunt Config
 	grunt.initConfig({
@@ -208,7 +208,7 @@ module.exports = function(grunt) {
 					variables: {
 						// Development Hash Value
 						// 'hash': '0000000000', // Development
-						
+
 						// Generate a truly random number by concatenating the current date with a random number
 						// The variable name corresponds with the same in our HTML file.
 						'hash': '<%= ((new Date()).valueOf().toString()) + (Math.floor((Math.random()*1000000)+1).toString()) %>' // Production

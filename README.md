@@ -11,7 +11,7 @@ I aim to support the following browsers and their associated versions throughout
 ### **Project Stack**
 
 - Node v0.10.24 <img src="https://www.codersgrid.com/wp-content/uploads/2013/05/nodejs-image-processing.png" width="40" height="auto" alt="">
-- NPM v1.3.21 <img src="https://npmjs.org/static/npm.png" width="30" height="auto" alt="node package manager">
+- NPM v1.3.21 <img src="https://www.npmjs.org/static/img/npm.png" width="30" height="auto" alt="node package manager">
 - Grunt-CLI v0.1.9 <img src="http://gruntjs.com/img/grunt-logo.png" width="15" height="auto" alt="">
 - Grunt v0.4.2 <img src="http://gruntjs.com/img/grunt-logo.png" width="15" height="auto" alt="">
 - Bower 1.2.8 <img src="https://github-camo.global.ssl.fastly.net/8a2024183152023c85dc7124365c1afb721450a4/687474703a2f2f626f7765722e696f2f696d672f626f7765722d6c6f676f2e706e67" width="15" height="auto" alt="">

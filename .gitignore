@@ -4,6 +4,14 @@
 #Sass
 .sass-cache
 
+#CSS
+.css
+
+#Images
+img/*.png
+img/*.jpg
+img/*.svg
+
 #NPM Directory
 node_modules
 

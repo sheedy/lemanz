@@ -23,13 +23,13 @@
 
 		<!-- #Typekit -->
 		<script>
-			// (function() {
-			// 	var config = {
-			// 		kitId: 'xxxxxxx',
-			// 		scriptTimeout: 3000
-			// 	};
-			// 	var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-			// })();
+			(function() {
+				var config = {
+					kitId: 'xxxxxxx',
+					scriptTimeout: 3000
+				};
+				var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+			})();
 		</script>
 
 		<title>Lemanz</title>
@@ -93,6 +93,20 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id, quia tempora velit quibusdam repudiandae. Mollitia, maiores, laborum tempora ea soluta harum quisquam error hic dolorum eius veritatis autem asperiores.</p>
 			</div>
 		</div>
+
+		<div class="grid">
+			<div class="col-5">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id, quia tempora velit quibusdam repudiandae. Mollitia, maiores, laborum tempora ea soluta harum quisquam error hic dolorum eius veritatis autem asperiores.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id, quia tempora velit quibusdam repudiandae. Mollitia, maiores, laborum tempora ea soluta harum quisquam error hic dolorum eius veritatis autem asperiores.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id, quia tempora velit quibusdam repudiandae. Mollitia, maiores, laborum tempora ea soluta harum quisquam error hic dolorum eius veritatis autem asperiores.</p>
+			</div>
+
+			<div class="col-7">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id, quia tempora velit quibusdam repudiandae. Mollitia, maiores, laborum tempora ea soluta harum quisquam error hic dolorum eius veritatis autem asperiores.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id, quia tempora velit quibusdam repudiandae. Mollitia, maiores, laborum tempora ea soluta harum quisquam error hic dolorum eius veritatis autem asperiores.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id, quia tempora velit quibusdam repudiandae. Mollitia, maiores, laborum tempora ea soluta harum quisquam error hic dolorum eius veritatis autem asperiores.</p>
+			</div>
+		</div>
 		<!-- end chit chat. get to work already! -->
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -101,7 +115,7 @@
 		<!-- build:js /js/minified/main.min.@@hash.js -->
 		<!-- endbuild -->
 		<script src="js/plugins/jquery.plugins.js"></script>
-		<script src="js/src/globals.js"></script>
+		<!-- <script src="js/src/globals.js"></script> -->
 
 		<!-- Grid Toggle -->
 		<script>window.onload=function(){var b=document.body;b.onkeypress=function(a){if(103==a.keyCode||103==a.charCode)a=b.getAttribute("data-development-grid"),null===a||"hide"==a?b.setAttribute("data-development-grid","show"):b.setAttribute("data-development-grid","hide")}};</script>

@@ -37,51 +37,6 @@
 
 @import "singularitygs";
 
-@include add-grid(12 at 800px);
-@include add-grid(1);
-
-// width in relation to a column of 1. 3 gutters make 1 column
-@include add-gutter(1/3);
-
-// opposite - flush on either side of the container
-// split - 1/2 gutter width. splits gutter on either side of a column.
-@include add-gutter-style('opposite');
-
-// @include sgs-change Throws an Error
-// wrong number of arguments (25 for 1..2) for `_linear-gradient'
-// @include sgs-change('debug', true);
-
-.grid {
-    @include background-grid(blue);
-    overflow: auto;
-    background: blue;
-}
-
-[class^="col-"] {
-    background: rgba(white, .39);
-}
-
-.col-1 {
-    @include grid-span(1, 1);
-    @include breakpoint(800px) {
-        @include grid-span(4, 1); // span 4 coluns and start at the 1st grid.
-    }
-}
-
-.col-2 {
-    @include grid-span(1, 1);
-    @include breakpoint(800px) {
-        @include grid-span(4, 5); // span 4 coluns and start at the 5th grid.
-    }
-}
-
-.col-3 {
-    @include grid-span(1, 1);
-    @include breakpoint(800px) {
-        @include grid-span(4, 9); // span 4 coluns and start at the 9th grid.
-    }
-}
-
 
 // ==========================================================================
 // $Compass Sprites
@@ -90,13 +45,13 @@
 // http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1
 // ==========================================================================
 
-$icons-spacing: 0px; // Increase the spacing between images within the sprite.
-@import "icons/*.png";
-@include all-icons-sprites(true); // .icons-[image-file-name] {}
+// $icons-spacing: 0px; // Increase the spacing between images within the sprite.
+// @import "icons/*.png";
+// @include all-icons-sprites(true); // .icons-[image-file-name] {}
 
 
 // ==========================================================================
-// $Variables
+// $Vars
 // ==========================================================================
 
 @import "variables/global";
@@ -166,30 +121,27 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 
 
 // ==========================================================================
-// $Bases
+// $Base
 // ==========================================================================
 
-// 1. Base Styles
-
-@import "utility/base"; // 1
+@import "utility/base";
 
 
 // ==========================================================================
 // $Typography
 // ==========================================================================
 
-// 1. Typesetting
-
-@import "typography/typesetting"; // 1
+@import "typography/typesetting";
 
 
 // ==========================================================================
 // $Layout
 // ==========================================================================
 
-// 1. Containers
+// 1. Singularity Grid System
+// 2. Containers
 
-@import "layout/containers"; // 2
+@import "layout/**/*";
 
 
 // ==========================================================================
@@ -217,7 +169,7 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 
 
 // ==========================================================================
-// $Helper Classes
+// $Helpers
 // ==========================================================================
 
 @import "utility/helpers";

@@ -1,93 +1,4 @@
 @charset "UTF-8";
-.grid {
-  overflow: auto;
-  background: blue;
-}
-
-[class^="col-"] {
-  background: rgba(255, 255, 255, 0.39);
-}
-
-.col-1 {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-@media (min-width: 800px) {
-  .col-1 {
-    width: 31.91489%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none;
-  }
-}
-
-.col-2 {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-@media (min-width: 800px) {
-  .col-2 {
-    width: 31.91489%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 34.04255%;
-    clear: none;
-  }
-}
-
-.col-3 {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-@media (min-width: 800px) {
-  .col-3 {
-    width: 31.91489%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-}
-
-.icons-sprite, .icons-building, .icons-camera, .icons-leaf, .icons-plane {
-  background-image: url('../img/icons-s372e649a02.png');
-  background-repeat: no-repeat;
-}
-
-.icons-building {
-  background-position: 0 0;
-  height: 156px;
-  width: 156px;
-}
-
-.icons-camera {
-  background-position: 0 -156px;
-  height: 156px;
-  width: 156px;
-}
-
-.icons-leaf {
-  background-position: 0 -312px;
-  height: 156px;
-  width: 156px;
-}
-
-.icons-plane {
-  background-position: 0 -468px;
-  height: 156px;
-  width: 156px;
-}
-
 ::-moz-selection, ::selection {
   background: #A60156;
   color: white;
@@ -1062,6 +973,91 @@ a:hover {
   width: 100%;
 }
 
+.col-1 {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 800px) {
+  .col-1 {
+    width: 31.91489%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+
+.col-2 {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 800px) {
+  .col-2 {
+    width: 31.91489%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.04255%;
+    clear: none;
+  }
+}
+
+.col-3 {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 800px) {
+  .col-3 {
+    width: 31.91489%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+.col-5 {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 800px) {
+  .col-5 {
+    width: 40.42553%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+
+.col-7 {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 800px) {
+  .col-7 {
+    width: 57.44681%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
 .undolist {
   list-style-type: none;
   padding: 0;
@@ -1117,17 +1113,18 @@ a:hover {
   visibility: hidden;
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .grid:before,
+.clearfix:after,
+.grid:after {
   content: " ";
   display: table;
 }
 
-.clearfix:after {
+.clearfix:after, .grid:after {
   clear: both;
 }
 
-.clearfix {
+.clearfix, .grid {
   *zoom: 1;
 }
 

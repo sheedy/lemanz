@@ -31,6 +31,59 @@
 
 
 // ==========================================================================
+// $Singularity
+// https://github.com/Team-Sass/Singularity
+// ==========================================================================
+
+@import "singularitygs";
+
+@include add-grid(12 at 800px);
+@include add-grid(1);
+
+// width in relation to a column of 1. 3 gutters make 1 column
+@include add-gutter(1/3);
+
+// opposite - flush on either side of the container
+// split - 1/2 gutter width. splits gutter on either side of a column.
+@include add-gutter-style('opposite');
+
+// @include sgs-change Throws an Error
+// wrong number of arguments (25 for 1..2) for `_linear-gradient'
+// @include sgs-change('debug', true);
+
+.grid {
+    @include background-grid(blue);
+    overflow: auto;
+    background: blue;
+}
+
+[class^="col-"] {
+    background: rgba(white, .39);
+}
+
+.col-1 {
+    @include grid-span(1, 1);
+    @include breakpoint(800px) {
+        @include grid-span(4, 1); // span 4 coluns and start at the 1st grid.
+    }
+}
+
+.col-2 {
+    @include grid-span(1, 1);
+    @include breakpoint(800px) {
+        @include grid-span(4, 5); // span 4 coluns and start at the 5th grid.
+    }
+}
+
+.col-3 {
+    @include grid-span(1, 1);
+    @include breakpoint(800px) {
+        @include grid-span(4, 9); // span 4 coluns and start at the 9th grid.
+    }
+}
+
+
+// ==========================================================================
 // $Compass Sprites
 // http://appendto.com/2014/02/screencast-speed-image-spriting-compass
 // http://compass-style.org/help/tutorials/spriting/magic-selectors
@@ -134,10 +187,8 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 // $Layout
 // ==========================================================================
 
-// 1. CSSWizardry Grids & Settings
-// 2. Containers
+// 1. Containers
 
-@import "layout/grid/csswizardry-grids"; // 1
 @import "layout/containers"; // 2
 
 

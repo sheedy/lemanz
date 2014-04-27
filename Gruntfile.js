@@ -87,6 +87,20 @@ module.exports = function(grunt) {
 			}
 		},
 
+		connect: {
+			server: {
+				options: {
+					port: 9001,
+					protocol: 'http',
+					hostname: 'localhost',
+					base: '.',  // '.' operates from the root of your Gruntfile, otherwise -> 'Users/user-name/www-directory/website-directory'
+					keepalive: false, // set to false to work side by side w/watch task.
+					livereload: true,
+					open: true
+				}
+			}
+		},
+
 		// == Grunt Imagemin
 		// http://integralist.co.uk/Grunt-Boilerplate.html
 		imagemin: {
@@ -307,7 +321,7 @@ module.exports = function(grunt) {
 
 
 	// Development Tasks
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['connect', 'watch']);
 	grunt.registerTask('hint', ['jshint']);
 	grunt.registerTask('test', ['qunit']);
 

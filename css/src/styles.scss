@@ -31,19 +31,27 @@
 
 
 // ==========================================================================
+// $Singularity
+// https://github.com/Team-Sass/Singularity
+// ==========================================================================
+
+@import "singularitygs";
+
+
+// ==========================================================================
 // $Compass Sprites
 // http://appendto.com/2014/02/screencast-speed-image-spriting-compass
 // http://compass-style.org/help/tutorials/spriting/magic-selectors
 // http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1
 // ==========================================================================
 
-$icons-spacing: 0px; // Increase the spacing between images within the sprite.
-@import "icons/*.png";
-@include all-icons-sprites(true); // .icons-[image-file-name] {}
+// $icons-spacing: 0px; // Increase the spacing between images within the sprite.
+// @import "icons/*.png";
+// @include all-icons-sprites(true); // .icons-[image-file-name] {}
 
 
 // ==========================================================================
-// $Variables
+// $Vars
 // ==========================================================================
 
 @import "variables/global";
@@ -113,32 +121,27 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 
 
 // ==========================================================================
-// $Bases
+// $Base
 // ==========================================================================
 
-// 1. Base Styles
-
-@import "utility/base"; // 1
+@import "utility/base";
 
 
 // ==========================================================================
 // $Typography
 // ==========================================================================
 
-// 1. Typesetting
-
-@import "typography/typesetting"; // 1
+@import "typography/typesetting";
 
 
 // ==========================================================================
 // $Layout
 // ==========================================================================
 
-// 1. CSSWizardry Grids & Settings
+// 1. Singularity Grid System
 // 2. Containers
 
-@import "layout/grid/csswizardry-grids"; // 1
-@import "layout/containers"; // 2
+@import "layout/**/*";
 
 
 // ==========================================================================
@@ -166,7 +169,7 @@ $icons-spacing: 0px; // Increase the spacing between images within the sprite.
 
 
 // ==========================================================================
-// $Helper Classes
+// $Helpers
 // ==========================================================================
 
 @import "utility/helpers";

@@ -3,6 +3,10 @@
 #
 require 'sass-globbing'
 
+# Singularity Grids
+# https://github.com/Team-Sass/Singularity/wiki/Installation#installation
+require 'singularitygs'
+
 # Breakpoint
 # https://github.com/Team-Sass/breakpoint/wiki/Installation#using-breakpoint
 require 'breakpoint'

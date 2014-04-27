@@ -14,10 +14,10 @@ I aim to support the following browsers and their associated versions throughout
 - NPM v1.3.21 <img src="https://www.npmjs.org/static/img/npm.png" width="30" height="auto" alt="node package manager">
 - Grunt-CLI v0.1.9 <img src="http://gruntjs.com/img/grunt-logo.png" width="15" height="auto" alt="">
 - Grunt v0.4.2 <img src="http://gruntjs.com/img/grunt-logo.png" width="15" height="auto" alt="">
-- Bower 1.2.8 <img src="https://github-camo.global.ssl.fastly.net/8a2024183152023c85dc7124365c1afb721450a4/687474703a2f2f626f7765722e696f2f696d672f626f7765722d6c6f676f2e706e67" width="15" height="auto" alt="">
-- Ruby 2.0.0p247 <img src="https://www.ruby-lang.org/images/header-ruby-logo.png" width="15" height="auto" alt="">
-- Sass 3.3.0.rc.5 (Maptastic Maple) <img src="http://sass-lang.com/assets/img/logo-235e394c.png" width="20" height="auto" alt="syntactically awesome stylesheets">
-- Compass 1.0.0.alpha.18 <img src="http://www.phase2technology.com/wp-content/uploads/2014/01/compass-logo-cropped-300x64.png" width="70" height="auto" alt="">
+- Bower 1.3.3 <img src="https://github-camo.global.ssl.fastly.net/8a2024183152023c85dc7124365c1afb721450a4/687474703a2f2f626f7765722e696f2f696d672f626f7765722d6c6f676f2e706e67" width="15" height="auto" alt="">
+- Ruby 2.1.1 <img src="https://www.ruby-lang.org/images/header-ruby-logo.png" width="15" height="auto" alt="">
+- Sass 3.3.6 (Maptastic Maple) <img src="http://sass-lang.com/assets/img/logo-235e394c.png" width="20" height="auto" alt="syntactically awesome stylesheets">
+- Compass 1.0.0.alpha.19 <img src="http://www.phase2technology.com/wp-content/uploads/2014/01/compass-logo-cropped-300x64.png" width="70" height="auto" alt="">
 - jQuery 1.10.2 <img src="http://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/220px-JQuery_logo.svg.png" width="40" height="auto" alt="javascript query">
 - Modernizr 2.6.2 <img src="http://modernizr.com/i/img/logo-x12.png" width="20" height="auto" alt="">
 
@@ -46,10 +46,11 @@ Once Bundler is installed run the following command:
 $ bundle install
 ```
 
-- Compass 1.0.0.alpha.18
-- Sass 3.3.0.rc.5
+- Compass 1.0.0.alpha.19
+- Sass 3.3.6
 - Sass Globbing 1.1.0
-- Breakpoint 2.4.0
+- Breakpoint 2.4.2
+- Singularity 1.2.0
 
 You can always check if the correct Gems are installed by running the bash command ``gem list`` which will list all your gem dependencies installed.
 
@@ -77,9 +78,11 @@ bower install
 npm install
 ```
 - devUpdate
+- jit-grunt
 - watch
 - compass
 - sass
+- connect
 - imagemin
 - qunit
 - jshint
@@ -93,7 +96,6 @@ npm install
 - usemin
 - asset_cachebuster
 - rev
-- matchdep
 
 ### **Notes**
 

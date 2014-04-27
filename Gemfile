@@ -2,21 +2,25 @@
 # required to execute associated Ruby code.
 #
 # http://bundler.io/v1.5/man/bundle.1.html
+# ~> 2.0.3 is identical to >= 2.0.3 and < 2.1
+# ~> 2.1 is identical to >= 2.1 and < 3.0
+# ~> 2.2.beta will match prerelease versions like 2.2.beta.12
 
 # Rubygems Source
 source "https://rubygems.org"
 
 # Ruby Version
-# ruby "0.0.0"
+ruby "2.1.1"
 
-# Gem Dependencies - Compass & Sass
-# Required Deps for Breakpoint Gem
-gem "sass", "~>3.3.0.rc.5"
-gem "compass", "~>1.0.0.alpha.18"
+# Sass & Compass
+gem "sass", "~> 3.3.6"
+gem "compass", "~>1.0.0.alpha"
 
 # Breakpoint
-# https://github.com/Team-Sass/breakpoint/wiki/Installation
 gem "breakpoint", "~>2.4.0"
 
 # Sass Globbing
 gem "sass-globbing", ">= 1.1.0"
+
+# Singularity
+gem "singularitygs", "~>1.2.0"

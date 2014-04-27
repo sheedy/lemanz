@@ -1,7 +1,7 @@
 // ============================================================
-// $Containment Wrappers
+// $Containers
 // ============================================================
 
-.wrap {
-    @include container($container-max-width, $gutter);
+.grid {
+	@include gridContainer($container-max-width);
 }
